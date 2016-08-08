@@ -7,7 +7,12 @@ const app = express();
 app.use(express.static(__dirname + '/output'));
 
 app.get('/', function (req, res) {
+  console.time('render');
   res.sendFile(path.join(__dirname + '/index.html'));
+  console.info('info message');
+  console.error('error message');
+  console.dir(console);
+  console.timeEnd('render');
 });
 
 app.listen(3000, function () {

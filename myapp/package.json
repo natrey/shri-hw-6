@@ -4,7 +4,8 @@
   "description": "infrastructure example",
   "main": "src/app.js",
   "scripts": {
-    "build": "babel src -d output"
+    "build": "babel src -d output",
+    "test": "eslint src"
   },
   "keywords": [
     "git",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-preset-es2015": "^6.13.2",
+    "eslint": "^3.2.2",   
     "express": "^4.14.0",
     "path": "^0.12.7"
   }
