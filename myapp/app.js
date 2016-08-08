@@ -6,6 +6,9 @@ const app = express();
 
 app.use(express.static(__dirname + '/output'));
 
+
+app.set('port', process.env.PORT || 3000);
+
 app.get('/', function (req, res) {
   console.time('render');
   res.sendFile(path.join(__dirname + '/index.html'));
@@ -15,6 +18,7 @@ app.get('/', function (req, res) {
   console.timeEnd('render');
 });
 
-app.listen(3000, function () {
-  console.log('Infrastructure example app listening on port 3000!');
+
+app.listen(app.get('port'), function () {
+  console.log('Infrastructure example app listening on port', app.get('port'));
 });
