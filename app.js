@@ -10,9 +10,13 @@ app.use(express.static(__dirname + '/output'));
 
 app.set('port', process.env.PORT || 3000);
 
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
 app.get('/', function (req, res) {
   console.time('render');
-  res.sendFile(path.join(__dirname + '/index.html'));
+  //res.sendFile(path.join(__dirname + '/index.html'));
+  response.render('index');
   console.info('info message');
   console.error('error message');
   console.dir(console);
