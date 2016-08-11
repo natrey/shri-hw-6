@@ -2,7 +2,7 @@
   "name": "infrastructure",
   "version": "1.0.0",
   "description": "infrastructure example",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
     "build": "babel src -d output",
     "test": "eslint src"
