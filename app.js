@@ -1,22 +1,18 @@
 "use strict";
 
 const express = require('express');
-const path = require('path');
 const app = express();
-
-app.use(express.static('output'));
-app.use(express.static(__dirname + '/output'));
-
 
 app.set('port', process.env.PORT || 3000);
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
+app.use(express.static(__dirname + '/output'));
+
 app.get('/', function (req, res) {
   console.time('render');
-  //res.sendFile(path.join(__dirname + '/index.html'));
-  response.render('index');
+  res.render('index');
   console.info('info message');
   console.error('error message');
   console.dir(console);
