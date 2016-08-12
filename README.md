@@ -1,6 +1,7 @@
 ## Домашнее задание к лекции "Инфраструктура веб-проектов"
 
 [![Build Status](https://travis-ci.org/iNata/shri-hw-6.svg?branch=master)](https://travis-ci.org/iNata/shri-hw-6)
+[![bitHound Overall Score](https://www.bithound.io/github/iNata/shri-hw-6/badges/score.svg)](https://www.bithound.io/github/iNata/shri-hw-6)
 
 Добавила приложение, которое в зависимости от рандомно генерируемого числа выводит разные фигуры в canvas;
 
@@ -30,3 +31,5 @@ api_key heroku.
 
 Удалила содержимое .travis.yml, из консоли залогинилась в heroku account, добавила api key, название приложения. Последующий 
 коммит сбилдился успешно.
+
+Настроила облачный линтер BitHound;
