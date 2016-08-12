@@ -19,6 +19,14 @@
 
 ![Скриншот heroku logs ](img/prtScreen2.jpg)
 
-Настроила travis CI, Настроить деплой ветки master в Heroku, добавила плашку build.
+Настроила travis CI, добавила плашку build.
 
 Ссылка на travis: https://travis-ci.org/iNata/shri-hw-6
+
+Сразу не получилось настроить деплой ветки master в Heroku через Travis. Согласно отчету Travis build'а не распознавался
+api_key heroku. 
+ 
+![Скриншот travis build history report](img/prtScreen3.jpg)
+
+Удалила содержимое .travis.yml, из консоли залогинилась в heroku account, добавила api key, название приложения. Последующий 
+коммит сбилдился успешно.
