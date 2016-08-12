@@ -21,4 +21,4 @@ var Person = function () {
     return Person;
 }();
 
-//console.log(new Person("Наташа").greet());
+new Person("Наташа").greet();
