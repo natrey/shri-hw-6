@@ -8,4 +8,4 @@ class Person{
     }
 }
 
-console.log(new Person("Наташа").greet());
+//console.log(new Person("Наташа").greet());
